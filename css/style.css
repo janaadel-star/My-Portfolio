@@ -6,7 +6,8 @@
 
 body{
     background-color: #F8F9FA; 
-    height: 2000px;;
+    height: 2000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar{
@@ -20,8 +21,7 @@ body{
     justify-content: space-between; 
     align-items: center; 
     padding: 0px 50px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
-    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(21, 21, 21, 0.05); 
 }
 
 .logo img{
@@ -57,6 +57,21 @@ body{
 
 .links ul li:hover  a::before {
     width: 100%;
+}
+
+.home-title{
+    text-align: center;
+    margin: 220px;
+}
+
+.home-desc h1{
+   font-size:100px ;
+   color: #C2185B;
+}
+
+.home-desc p{
+   font-size: 40px;
+   color: #4A4A4A;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
