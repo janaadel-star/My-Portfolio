@@ -1,1 +1,0 @@
-console.log("JavaScript is successfully connected!");
