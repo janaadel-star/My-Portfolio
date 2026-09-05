@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -17,17 +18,17 @@
 
      <div class="links">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
      </div><!-- links -->
 
     </div><!-- navbar -->
 
-  <section class="home">
+  <section class="home" id="home">
 
     <div class="home-desc">
        <p>Hello I'm</p>
@@ -39,7 +40,7 @@
 
    </header><!--home-title-->
 <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
-  <section class="about-us">
+  <section class="about-us" id="about">
 
     <div class="about-title">
       <p>Who Am I ?</p>
@@ -55,8 +56,36 @@
     </div>
 
   </section><!-- about-us -->
-  <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+  <section class="skills" id="skills">
 
+    <div class="skills-header">
+      <h3>My Skills</h3>
+      <div class="underline"></div>
+    </div><!-- skills-title -->
+
+   <div class="skills-container">
+
+    <div class="skills-card">
+      <i class="fa-brands fa-html5"></i>
+      <p>HTML</p>
+    </div><!-- skills-card -->
+
+    <div class="skills-card">
+      <i class="fa-brands fa-css3-alt"></i>
+      <p>CSS</p>
+    </div><!-- skills-card -->
+
+    <div class="skills-card">
+      <i class="fa-brands fa-js"></i>
+      <p>JavaScript</p>
+    </div><!-- skills-card -->
+
+   </div><!-- skills-container -->
+
+  </section><!-- skills -->
+<!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+ 
  </main>  
 </body>
 </html>
