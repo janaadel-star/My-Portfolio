@@ -42,7 +42,7 @@ body{
 }
 
 .links ul li a:hover {
-    color: #333; 
+    color: #4A4A4A; 
 }
 
 .links ul li a::before {
@@ -51,7 +51,7 @@ body{
     top: 20px;
     width: 0px;
     height: 2px;
-    background-color: #333;
+    background-color: #4A4A4A;
     transition: 1s;
 }
 
@@ -81,7 +81,7 @@ body{
 }
 
 .about-title h2{
-   font-size:53px;
+   font-size:55px;
    color: #C2185B;
 }
 
@@ -109,7 +109,7 @@ body{
 .about-img img:hover{
     transform: scale(1.08); 
     border-color: #C2185B; 
-    box-shadow:10px 10px 10px 1px #e54786 ;
+    box-shadow:10px 10px 10px 1px rgba(194, 24, 91, 0.35);
 }
 
 .about-desc p{
