@@ -102,13 +102,11 @@ body{
    height: 280px;
    object-fit: cover;
    border-radius: 50%;
-   border: 5px solid #C2185B;
    transition: 0.5s ;
 }
 
 .about-img img:hover{
     transform: scale(1.08); 
-    border-color: #C2185B; 
     box-shadow:10px 10px 10px 1px rgba(194, 24, 91, 0.35);
 }
 
