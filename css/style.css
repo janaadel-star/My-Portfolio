@@ -188,20 +188,11 @@ body{
 
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 
-/* الإعدادات العامة للقسم */
-/* body {
-    background-color: #F8F9FA;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-} */
-
 .projects-section {
     text-align: center;
     padding: 60px 20px;
 }
 
-/* العناوين العلويّة */
 .subtitle {
     font-size: 13px;
     letter-spacing: 2px;
@@ -213,7 +204,7 @@ body{
 
 .main-title {
     font-size: 52px;
-    color: #C2185B; /* لون البراند الفوشيا */
+    color: #C2185B; /* لون البراند الأساسي */
     font-weight: 800;
     margin: 8px 0;
     letter-spacing: 1px;
@@ -226,39 +217,45 @@ body{
     font-weight: 600;
 }
 
-/* شبكة البوكسات الأربعة */
+/* ==========================================
+   3. شبكة البوكسات الأربعة (Projects Grid)
+   ========================================== */
 .projects-grid {
     display: flex;
     justify-content: center;
     gap: 20px;
     max-width: 1300px;
     margin: 0 auto;
-    flex-wrap: wrap; /* لجعل التصميم يعيد ترتيب نفسه في الشاشات الصغيرة */
+    flex-wrap: wrap; /* يعيد ترتيب الكروت في الشاشات الصغيرة */
 }
 
-/* تصميم الكارت الواحد */
+/* ==========================================
+   4. تصميم البوكس/الكارت الواحد (Project Card)
+   ========================================== */
 .project-card {
     background-color: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(194, 24, 91, 0.15); /* بوردر فوشيا هادئ جداً */
+    border: 1px solid rgba(194, 24, 91, 0.15); /* بوردر فوشيا هادئ */
     border-radius: 16px;
     padding: 24px;
-    width: 250px; /* العرض الثابت للبوكسات الأربعة */
+    width: 250px; /* عرض متناسق للأربع كروت */
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
-    transition: all 0.3s ease; /* تنعيم الحركة عند التمرير */
+    transition: all 0.3s ease; /* تنعيم حركة الـ hover */
 }
 
-/* تأثير الـ Hover على البوكس */
+/* تأثير مرور الماوس على البوكس */
 .project-card:hover {
-    transform: translateY(-6px); /* ارتفاع البوكس لأعلى */
-    border-color: #C2185B; /* إبراز الحدود بلون البراند */
-    box-shadow: 0 10px 25px rgba(194, 24, 91, 0.12); /* هالة/ظل فوشيا هادئ خلف البوكس */
+    transform: translateY(-6px);
+    border-color: #C2185B;
+    box-shadow: 0 10px 25px rgba(194, 24, 91, 0.12); /* ظل فوشيا ناعم خلف البوكس */
 }
 
-/* عنوان المشروع داخل البوكس */
+/* ==========================================
+   5. تفاصيل النصوص داخل البوكس
+   ========================================== */
 .card-title {
     font-size: 19px;
     color: #C2185B;
@@ -274,7 +271,6 @@ body{
     opacity: 0.8;
 }
 
-/* الوصف */
 .card-desc {
     font-size: 13.5px;
     color: #555555;
@@ -282,19 +278,40 @@ body{
     margin: 0 0 20px 0;
 }
 
-/* التاجز (التقنيات) */
-.tags {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
+/* ==========================================
+   6. تنسيق رابط المشروع (بدون خط سفلي)
+   ========================================== */
+.project-url {
+    display: inline-block;
+    color: #C2185B;
+    background-color: rgba(194, 24, 91, 0.08); /* خلفية فوشيا شفافة ومريحة */
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12.5px;
+    font-weight: 600;
+    text-decoration: none; /* إزالة الخط السفلي نهائياً */
+    word-break: break-all;  /* يمنع خروج اللينك عن حدود البوكس */
+    margin-top: auto;       /* يحافظ على موقعه في أسفل البوكس دائمًا */
+    transition: all 0.3s ease;
 }
 
-.tags span {
-    background-color: rgba(194, 24, 91, 0.08); /* خلفية التاج فوشيا شفافة */
-    color: #C2185B;
-    font-size: 11px;
-    font-weight: 700;
-    padding: 5px 10px;
-    border-radius: 8px;
-    letter-spacing: 0.5px;
+/* تأثير الـ hover على الرابط نفسه */
+.project-url:hover {
+    background-color: #C2185B;
+    color: #FFFFFF;
+}
+
+/* ==========================================
+   7. تجاوب التصميم مع الشاشات الصغيرة (Responsive)
+   ========================================== */
+@media (max-width: 992px) {
+    .project-card {
+        width: 45%; /* كارتين في كل سطر للتابلت */
+    }
+}
+
+@media (max-width: 600px) {
+    .project-card {
+        width: 100%; /* كارت واحد في كل سطر للموبايل */
+    }
 }
