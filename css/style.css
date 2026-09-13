@@ -1,121 +1,122 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
-    background-color: #F8F9FA; 
-    height: 2000px;
-    font-family: Sans-serif;
+  background-color: #F8F9FA; 
+  height: 2000px;
+  font-family: Sans-serif;
 }
 
 .navbar{
-    background-color:#F8F9FA; 
-    width: 100%; 
-    height: 80px;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 0px 50px;
-    box-shadow: 0 2px 5px rgba(21, 21, 21, 0.05); 
+  background-color:#F8F9FA; 
+  width: 100%; 
+  height: 80px;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0px 50px;
+  box-shadow: 0 2px 5px rgba(21, 21, 21, 0.05); 
+  z-index: 1000;
 }
 
 .logo img{
-    width:100px;
+  width:100px;
 }
 
 .links ul {
-    list-style: none; 
-    display: flex; 
+  list-style: none; 
+  display: flex; 
 }
 
 .links ul li a {
-    text-decoration: none; 
-    color: #C2185B; 
-    margin-left: 30px;
-    font-weight: bold;
-    position: relative;
+  text-decoration: none; 
+  color: #C2185B; 
+  margin-left: 30px;
+  font-weight: bold;
+  position: relative;
 }
 
 .links ul li a:hover {
-    color: #4A4A4A; 
+  color: #C2185b; 
 }
 
 .links ul li a::before {
-    content: '';
-    position: absolute;
-    top: 20px;
-    width: 0px;
-    height: 2px;
-    background-color: #4A4A4A;
-    transition: 1s;
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 0px;
+  height: 2px;
+  background-color: #C2185B;
+  transition: 0.4s;
 }
 
 .links ul li:hover  a::before {
-    width: 100%;
+  width: 100%;
 }
 
 .home{
-    text-align: center;
-    margin:200px 220px;
+  text-align: center;
+  margin:200px 220px;
 }
 
 .home-desc h1{
-   font-size:100px;
-   color: #C2185B;
+  font-size:100px;
+  color: #C2185B;
 }
 
 .home-desc p{
-   font-size: 42px;
-   color: #4A4A4A;
+  font-size: 42px;
+  color: #666666;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .about-title{
-   text-align: center;
+  text-align: center;
 }
 
 .about-title h2{
-   font-size:55px;
-   color: #C2185B;
+  font-size:55px;
+  color: #C2185B;
 }
 
 .about-title p{
-    font-size:35px;
-    color: #4A4A4A; 
-    padding: 10px;
+  font-size:35px;
+  color: #666666; 
+  padding: 10px;
 }
 
 .about-img{
-   display: flex;
-   justify-content: center; 
+  display: flex;
+  justify-content: center; 
 }
 
 .about-img img{
-   margin-top: 15px;
-   width: 280px;
-   height: 280px;
-   object-fit: cover;
-   border-radius: 50%;
-   transition: 0.5s ;
+  margin-top: 15px;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 0.5s ;
 }
 
 .about-img img:hover{
-    transform: scale(1.08); 
-    box-shadow:10px 10px 10px 1px rgba(194, 24, 91, 0.35);
+  transform: scale(1.08); 
+  box-shadow:10px 10px 10px 1px rgba(194, 24, 91, 0.35);
 }
 
 .about-desc p{
-    padding: 17px 100px;
-    font-size:24px;
-    line-height: 30px;
-    text-align: center;
-    color: #4A4A4A;
+  padding: 17px 100px;
+  font-size:24px;
+  line-height: 30px;
+  text-align: center;
+  color: #666666;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////// */
@@ -127,6 +128,7 @@ body{
 .skills-header {
   margin-bottom: 50px;
   font-size: 50px;
+  letter-spacing: 1px;
   color: #C2185B;
   text-align: center;
 }
@@ -134,7 +136,7 @@ body{
 .underline {
   width: 90px;            
   height: 4px;            
-  background-color: #4A4A4A; 
+  background-color: #666666; 
   margin: 8px auto 0 auto; 
   border-radius: 2px;     
 }
@@ -147,17 +149,24 @@ body{
 }
 
 .skills-card {
-  background-color: #F8F9FA;
-  border: 2px solid #C2185B;
-  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1.5px solid rgba(194, 24, 91, 0.15);
+  border-radius: 16px;
   width: 210px;
   height: 210px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  transition: all 0.3s ease-in-out;
+  gap: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.skills-card:hover{
+  transform: translateY(-6px);
+  border-color: #C2185B;
+  box-shadow: 0 10px 25px rgba(194, 24, 91, 0.12); 
 }
 
 .skills-card i {
@@ -168,150 +177,103 @@ body{
 
 .skills-card p {
   font-size: 20px;
-  color: #4A4A4A;
+  color: #666666;
   transition: all 0.3s ease-in-out;
-}
-
-.skills-card:hover{
-  border-color: #e3568e;
-  box-shadow: 0 0 20px rgba(194, 24, 91, 0.35);
-  transform: translateY(-5px);
-}
-
-.skills-card:hover i{
-  color: #e3568e; 
-}
-
-.skills-card:hover p{
-  color: #e3568e; 
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 
-.projects-section {
-    text-align: center;
-    padding: 60px 20px;
+.projects {
+  text-align: center;
+  padding: 80px 20px;
 }
 
 .subtitle {
-    font-size: 13px;
-    letter-spacing: 2px;
-    color: #666666;
-    font-weight: 600;
-    text-transform: uppercase;
-    display: block;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #666666;
+  font-weight: 300;
 }
 
 .main-title {
-    font-size: 52px;
-    color: #C2185B; /* لون البراند الأساسي */
-    font-weight: 800;
-    margin: 8px 0;
-    letter-spacing: 1px;
+  font-size: 52px;
+  color: #C2185B;
+  text-align: center;
+  font-weight: 700;
+  margin: 10px 0 60px 0;
+  letter-spacing: 1px;
 }
 
-.category-title {
-    font-size: 26px;
-    color: #C2185B;
-    margin-bottom: 50px;
-    font-weight: 600;
-}
-
-/* ==========================================
-   3. شبكة البوكسات الأربعة (Projects Grid)
-   ========================================== */
 .projects-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1300px;
-    margin: 0 auto;
-    flex-wrap: wrap; /* يعيد ترتيب الكروت في الشاشات الصغيرة */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; 
 }
 
-/* ==========================================
-   4. تصميم البوكس/الكارت الواحد (Project Card)
-   ========================================== */
 .project-card {
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(194, 24, 91, 0.15); /* بوردر فوشيا هادئ */
-    border-radius: 16px;
-    padding: 24px;
-    width: 250px; /* عرض متناسق للأربع كروت */
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
-    transition: all 0.3s ease; /* تنعيم حركة الـ hover */
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1.5px solid rgba(194, 24, 91, 0.15); 
+  border-radius: 16px;
+  padding: 24px;
+  width: 250px; 
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease; 
 }
 
-/* تأثير مرور الماوس على البوكس */
 .project-card:hover {
-    transform: translateY(-6px);
-    border-color: #C2185B;
-    box-shadow: 0 10px 25px rgba(194, 24, 91, 0.12); /* ظل فوشيا ناعم خلف البوكس */
+  transform: translateY(-6px);
+  border-color: #C2185B;
+  box-shadow: 0 10px 25px rgba(194, 24, 91, 0.12); 
 }
 
-/* ==========================================
-   5. تفاصيل النصوص داخل البوكس
-   ========================================== */
 .card-title {
-    font-size: 19px;
-    color: #C2185B;
-    margin: 0 0 12px 0;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.card-title .icon {
-    font-size: 16px;
-    opacity: 0.8;
+  font-size: 19px;
+  color: #C2185B;
+  margin: 0 0 12px 0;
+  padding: 6px 0;
+  font-weight: 700;
 }
 
 .card-desc {
-    font-size: 13.5px;
-    color: #555555;
-    line-height: 1.6;
-    margin: 0 0 20px 0;
+  font-size: 13.5px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
 }
 
-/* ==========================================
-   6. تنسيق رابط المشروع (بدون خط سفلي)
-   ========================================== */
 .project-url {
-    display: inline-block;
-    color: #C2185B;
-    background-color: rgba(194, 24, 91, 0.08); /* خلفية فوشيا شفافة ومريحة */
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 12.5px;
-    font-weight: 600;
-    text-decoration: none; /* إزالة الخط السفلي نهائياً */
-    word-break: break-all;  /* يمنع خروج اللينك عن حدود البوكس */
-    margin-top: auto;       /* يحافظ على موقعه في أسفل البوكس دائمًا */
-    transition: all 0.3s ease;
+  display: inline-block;
+  color: #C2185B;
+  background-color: rgba(194, 24, 91, 0.08); 
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none; 
+  transition: all 0.3s ease;
 }
 
-/* تأثير الـ hover على الرابط نفسه */
 .project-url:hover {
-    background-color: #C2185B;
-    color: #FFFFFF;
+  background-color: #C2185B;
+  color: #FFFFFF;
 }
 
-/* ==========================================
-   7. تجاوب التصميم مع الشاشات الصغيرة (Responsive)
-   ========================================== */
 @media (max-width: 992px) {
-    .project-card {
-        width: 45%; /* كارتين في كل سطر للتابلت */
-    }
+  .project-card {
+    width: 45%; 
+  }
 }
 
 @media (max-width: 600px) {
-    .project-card {
-        width: 100%; /* كارت واحد في كل سطر للموبايل */
-    }
+  .project-card {
+    width: 100%; 
+  }
 }
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
