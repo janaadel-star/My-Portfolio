@@ -188,4 +188,113 @@ body{
 
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 
+/* الإعدادات العامة للقسم */
+/* body {
+    background-color: #F8F9FA;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+} */
 
+.projects-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* العناوين العلويّة */
+.subtitle {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #666666;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+}
+
+.main-title {
+    font-size: 52px;
+    color: #C2185B; /* لون البراند الفوشيا */
+    font-weight: 800;
+    margin: 8px 0;
+    letter-spacing: 1px;
+}
+
+.category-title {
+    font-size: 26px;
+    color: #C2185B;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+/* شبكة البوكسات الأربعة */
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* لجعل التصميم يعيد ترتيب نفسه في الشاشات الصغيرة */
+}
+
+/* تصميم الكارت الواحد */
+.project-card {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(194, 24, 91, 0.15); /* بوردر فوشيا هادئ جداً */
+    border-radius: 16px;
+    padding: 24px;
+    width: 250px; /* العرض الثابت للبوكسات الأربعة */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease; /* تنعيم الحركة عند التمرير */
+}
+
+/* تأثير الـ Hover على البوكس */
+.project-card:hover {
+    transform: translateY(-6px); /* ارتفاع البوكس لأعلى */
+    border-color: #C2185B; /* إبراز الحدود بلون البراند */
+    box-shadow: 0 10px 25px rgba(194, 24, 91, 0.12); /* هالة/ظل فوشيا هادئ خلف البوكس */
+}
+
+/* عنوان المشروع داخل البوكس */
+.card-title {
+    font-size: 19px;
+    color: #C2185B;
+    margin: 0 0 12px 0;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-title .icon {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* الوصف */
+.card-desc {
+    font-size: 13.5px;
+    color: #555555;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+}
+
+/* التاجز (التقنيات) */
+.tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tags span {
+    background-color: rgba(194, 24, 91, 0.08); /* خلفية التاج فوشيا شفافة */
+    color: #C2185B;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+}
